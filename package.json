@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "doc:atlas": "compodoc -p ./tsconfig.compodoc.json -s",
     "start:atlas": "ng serve",
     "start:cfd-test": "ng serve --project=cfd-test",
     "start:cfd-lift": "ng serve --project=cfd-lift",
@@ -20,6 +21,7 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "@compodoc/compodoc": "^1.1.19",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
