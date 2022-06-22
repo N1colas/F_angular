@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start:atlas": "ng serve",
+    "start:cfd-test": "ng serve --project=cfd-test",
+    "start:cfd-lift": "ng serve --project=cfd-lift",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
