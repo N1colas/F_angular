@@ -9,11 +9,11 @@ import { MessageService } from './services/message.service';
   declarations: [],
   imports: [],
   providers: [
-    {
-      provide: APP_INITIALIZER,
-      useValue: () => alert('App Started'),
-      multi:true
-    },
+    // {
+    //   provide: APP_INITIALIZER,
+    //   useValue: () => alert('App Started'),
+    //   multi:true
+    // },
     DispatcherService,
     UserService,
     MessageService
