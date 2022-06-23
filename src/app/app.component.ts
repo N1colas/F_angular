@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DispatcherService } from './core/services/dispatcher.service';
+import { DispatcherService } from '@core';
 
 @Component({
   selector: 'app-root',

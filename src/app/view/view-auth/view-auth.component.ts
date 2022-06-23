@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DispatcherService } from 'src/app/core/services/dispatcher.service';
+import { DispatcherService } from '@core';
 
 @Component({
   selector: 'app-view-auth',

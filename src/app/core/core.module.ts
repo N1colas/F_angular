@@ -1,7 +1,7 @@
-import { APP_INITIALIZER, NgModule } from '@angular/core';
-import { DispatcherService } from './services/dispatcher.service';
+import { NgModule } from '@angular/core';
 import { UserService } from './services/user.service';
 import { MessageService } from './services/message.service';
+import { DispatcherService } from '@core';
 
 
 

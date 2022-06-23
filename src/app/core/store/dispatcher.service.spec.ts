@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DispatcherService } from './dispatcher.service';
+import { DispatcherService } from '@core';
 
 describe('DispatcherService', () => {
   let service: DispatcherService;

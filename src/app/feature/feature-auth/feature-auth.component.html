@@ -2,6 +2,11 @@
 <app-base-input></app-base-input>
 <app-base-button></app-base-button> -->
 
-<input type="text">
-<input type="text">
-<button>Connecté</button>
+<code>{{ credentials | json }}</code>
+<br />
+email
+<input type="text" [(ngModel)]="credentials.email" />
+password
+<input type="password" [(ngModel)]="credentials.password" />
+
+<button (click)="login()">Connecté</button>
