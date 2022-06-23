@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 import { AppAction } from '../interfaces/app-action';
 import { AppManager } from '../interfaces/app-manager';
 import { AppMessage } from '../interfaces/app-message';
@@ -9,10 +9,11 @@ export class MessageService implements AppManager<AppMessage, {msg:string}> {
   data$ = new BehaviorSubject<AppMessage[]>([]);
 
   constructor() {
-    console.log('MessageService');
+
    }
 
   process(action: AppAction<AppMessage | Partial<AppMessage>>): Observable<{ msg: string; }> {
-    throw new Error('Method not implemented.');
+    console.log(action)
+    return of({msg:'Method not implemented.'})
   }
 }

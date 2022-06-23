@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
-import { UserService } from './services/user.service';
-import { MessageService } from './services/message.service';
-import { DispatcherService } from '@core';
+import { DispatcherService, UserService, MessageService } from '@core';
+import { UserMiddlewareService } from './middleware/user-middleware.service';
 
 
 
@@ -23,9 +22,9 @@ export class CoreModule {
 
   constructor(
     dispatcher:DispatcherService,
-    user:UserService,
-    message:MessageService,
+    userMidelware:UserMiddlewareService,
+    user:UserService
   ) {
-    console.log(dispatcher)
+
   }
 }
