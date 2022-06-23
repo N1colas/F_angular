@@ -9,7 +9,19 @@ import { FeatureAuthComponent } from 'src/app/feature/feature-auth/feature-auth.
 })
 export class ViewTemplateComponent implements OnInit, AfterViewInit {
 
+  pause = false;
+  size: {width: number, height:number} = {width: 0, height:0}
 
+  @HostListener('window:keyup.control.alt.p')
+  togglePause() {
+    this.pause = !this.pause;
+  }
+
+  @HostListener('window:resize')
+  getDocumentSize() {
+    this.size.width = window.innerWidth;
+    this.size.height = window.innerHeight;
+  }
 
   @ViewChild(BaseHeaderComponent) header:BaseHeaderComponent|null = null;
   @ContentChild(FeatureAuthComponent) content:FeatureAuthComponent|null = null;
