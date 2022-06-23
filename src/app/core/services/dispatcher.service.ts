@@ -23,6 +23,7 @@ export class DispatcherService  {
   })
 
   dispatch(action:AppAction<any>): Observable<{msg:string}> {
+    console.table(action);
     return of({msg:'Not implement'})
   }
 
